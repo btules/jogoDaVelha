@@ -35,19 +35,19 @@ public class jogo {
 		System.out.println("-------------------------------------");
 
 
-		System.out.println("Se vocÍ deseja comeÁar digite 1, ou se preferir a maquina comeÁa digite 2");
+		System.out.println("Se preferir que a maquina comece digite 1, ou Se voc√™ deseja come√ßar digite 2");
 		escolha = iniciar.nextInt();
 
 		if (escolha == 1) {
 			playerPc = 'X';
 			playerUser = 'O'; 
-			System.out.println("A m·quina ser· o primeiro e  ficar· com ! " + playerPc);
-			System.out.println("Boa Sorte !! Jogador ser· o segundo e ficar· com " + playerUser);
+			System.out.println("A m√°quina ser√° o primeiro e  ficar√° com ! " + playerPc);
+			System.out.println("Boa Sorte !! Jogador ser√° o segundo e ficar√° com " + playerUser);
 		}else {
 			playerUser = 'X';
 			playerPc = 'O';
-			System.out.println("VocÍ ser· iniciar· o jogo, e ficar· com " + playerUser);
-			System.out.println("A m·quina ser· o Segundo e ficar· com " + playerPc);
+			System.out.println("Voc√™ ser√° iniciar√° o jogo, e ficar√° com " + playerUser);
+			System.out.println("A m√°quina ser√° o Segundo e ficar√° com " + playerPc);
 		}
 
 		System.out.println();
@@ -79,7 +79,7 @@ public class jogo {
 			while(partidas <= 9 ){
 
 				if(escolha == 1){				
-					//verifica se tem ja uma jogada na posiÁ„o escolhida.
+					//verifica se tem ja uma jogada na posi√ß√£o escolhida.
 
 					System.out.println("Escolha a Linha que deseja jogar");
 					escolhaLinha = sortLinha.nextInt(2)+1;
@@ -147,7 +147,7 @@ public class jogo {
 				//contabiliza as jogadas
 				partidas++;
 
-				//verifica as linhas se est„o validas
+				//verifica as linhas se est√£o validas
 				if((linha[1] == playerPc) && (linha[2] == playerPc) && (linha[3] == playerPc)) {
 					jogadas = 3;
 					break;
@@ -174,7 +174,7 @@ public class jogo {
 					break;
 				}
 
-				//verifica as linhas se est„o validas
+				//verifica as linhas se est√£o validas
 				if((linha[1] == playerUser) && (linha[2] == playerUser) && (linha[3] == playerUser)) {
 					jogadas2 = 3;
 					break;
@@ -227,7 +227,7 @@ public class jogo {
 				}
 
 				while((verificaJogadasEfetuadas[posicao] == 'X')||(verificaJogadasEfetuadas[posicao] == 'O')) {
-					System.out.println("Est· linha j· est· marcada, escolha outra");
+					System.out.println("Est√° linha j√° est√° marcada, escolha outra");
 					escolhaLinha = line.nextInt();
 					System.out.println("Escolha a Coluna que deseja jogar");
 					escolhaColuna = column.nextInt();
@@ -261,7 +261,7 @@ public class jogo {
 
 
 
-				//verifica as linhas se est„o validas
+				//verifica as linhas se est√£o validas
 				if((linha[1] == playerPc) && (linha[2] == playerPc) && (linha[3] == playerPc)) {
 					jogadas = 3;
 					break;
@@ -288,7 +288,7 @@ public class jogo {
 					break;
 				}
 
-				//verifica as linhas se est„o validas
+				//verifica as linhas se est√£o validas
 				if((linha[1] == playerUser) && (linha[2] == playerUser) && (linha[3] == playerUser)) {
 					jogadas2 = 3;
 					break;
@@ -345,7 +345,7 @@ public class jogo {
 					}
 
 					while((verificaJogadasEfetuadas[posicao] == 'X')||(verificaJogadasEfetuadas[posicao] == 'O')) {
-						System.out.println("Est· linha j· est· marcada, escolha outra");
+						System.out.println("Est√° linha j√° est√° marcada, escolha outra");
 						escolhaLinha = line.nextInt();
 						System.out.println("Escolha a Coluna que deseja jogar");
 						escolhaColuna = column.nextInt();
@@ -382,7 +382,7 @@ public class jogo {
 				//contabiliza as jogadas
 				partidas++;
 
-				//verifica as linhas se est„o validas
+				//verifica as linhas se est√£o validas
 				if((linha[1] == playerPc) && (linha[2] == playerPc) && (linha[3] == playerPc)) {
 					jogadas = 3;
 					break;
@@ -409,7 +409,7 @@ public class jogo {
 					break;
 				}
 
-				//verifica as linhas se est„o validas
+				//verifica as linhas se est√£o validas
 				if((linha[1] == playerUser) && (linha[2] == playerUser) && (linha[3] == playerUser)) {
 					jogadas2 = 3;
 					break;
@@ -445,7 +445,7 @@ public class jogo {
 
 				//MAQUINA
 
-				//verifica se tem ja uma jogada na posiÁ„o escolhida.
+				//verifica se tem ja uma jogada na posi√ß√£o escolhida.
 
 				System.out.println("Escolha a Linha que deseja jogar");
 				escolhaLinha = sortLinha.nextInt(2)+1;
@@ -517,7 +517,7 @@ public class jogo {
 
 
 
-				//verifica as linhas se est„o validas
+				//verifica as linhas se est√£o validas
 				if((linha[1] == playerPc) && (linha[2] == playerPc) && (linha[3] == playerPc)) {
 					jogadas = 3;
 					break;
@@ -544,7 +544,7 @@ public class jogo {
 					break;
 				}
 
-				//verifica as linhas se est„o validas
+				//verifica as linhas se est√£o validas
 				if((linha[1] == playerUser) && (linha[2] == playerUser) && (linha[3] == playerUser)) {
 					jogadas2 = 3;
 					break;
@@ -585,9 +585,9 @@ public class jogo {
 
 		//Verifica quem foi o vencedor.
 		if(jogadas == 3) {
-			System.out.println("ParabÈns jogador "+ playerPc);
+			System.out.println("Parab√©ns jogador "+ playerPc);
 		}else if(jogadas2 == 3){
-			System.out.println("ParabÈns jogador "+playerUser);
+			System.out.println("Parab√©ns jogador "+playerUser);
 		}else if((jogadas == 0) && (jogadas2 == 0)){
 			System.out.println("Empate !!");
 		}else {
